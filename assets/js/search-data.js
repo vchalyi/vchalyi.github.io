@@ -37,7 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
+          title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how-to-take-smart-notes/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
