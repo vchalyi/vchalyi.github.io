@@ -66,13 +66,7 @@ layout: default
           {% if page.started or page.finished or page.stars %}
             &nbsp;&middot;&nbsp;
           {% endif %}
-          <a target="_blank" href="{{ page.buy_link }}"
-            ><i class="fa-solid fa-cart-shopping"></i>
-            {% assign is_amazon_link = page.buy_link | slice: 0, 19 %}
-            {% if is_amazon_link == 'https://www.amazon.' %}
-              <i class="fa-brands fa-amazon"></i>
-            {% endif %}
-          </a>
+          <a target="_blank" href="{{ page.buy_link }}">Buy on Amazon</a>
         {% endif %}
       </p>
     {% endif %}
@@ -130,7 +124,7 @@ layout: default
         {% if page.cover %}
           <img alt="{{ page.title }} cover" src="{{ site.baseurl }}/{{ page.cover }}">
           <figcaption>
-            Cover of <em>{{ page.title }}</em>
+            Cover of <em>{{ page.title | truncate: 30 }}</em>
           </figcaption>
         {% elsif page.olid %}
           <img alt="{{ page.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false">
