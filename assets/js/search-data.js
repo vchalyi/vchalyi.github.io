@@ -42,6 +42,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/how-to-take-smart-notes/";
+            },},{id: "books-the-coaching-habit-say-less-ask-more-amp-change-the-way-you-lead-forever",
+          title: 'The Coaching Habit: Say Less, Ask More &amp;amp; Change the Way You Lead...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/say-less-ask-more/";
             },},{
         id: 'social-email',
         title: 'email',
